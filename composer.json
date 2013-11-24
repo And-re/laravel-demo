@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.0.*",
-		"mawelous/yamop-laravel": "dev-master"
+		"mawelous/yamop-laravel": "dev-master",
+		"twitter/bootstrap": "*"
 	},
 	"autoload": {
 		"classmap": [
