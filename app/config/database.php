@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'mongo',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -43,6 +43,14 @@ return array(
 	| choice installed on your machine before you begin development.
 	|
 	*/
+
+	'mongo' => array(
+        'host'     => 'localhost',
+        'port'     => 27017,
+        'database' => 'laravel-demo',
+        'user'     => 'laravel',
+        'password' => 'laravel'
+    ),
 
 	'connections' => array(
 

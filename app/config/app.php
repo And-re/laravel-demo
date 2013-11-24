@@ -114,6 +114,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
+		'Mawelous\YamopLaravel\YamopLaravelServiceProvider',
 	),
 
 	/*
@@ -179,6 +180,8 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 
+		'Mapper'          => 'Mawelous\YamopLaravel\Mapper',
+		'Model'           => 'Mawelous\YamopLaravel\Model',
 	),
 
 );
