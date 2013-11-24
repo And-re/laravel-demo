@@ -11,6 +11,9 @@
 |
 */
 
+/*
+Closure based routes
+
 Route::get('/', function()
 {
 	return View::make('hello');
@@ -20,3 +23,8 @@ Route::get('users', function()
 {
     return View::make('users');
 });
+*/
+
+Route::get('/', 'HomeController@showWelcome');
+
+Route::get('users', 'UserController@getIndex');
