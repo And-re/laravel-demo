@@ -1,0 +1,43 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body {
+  padding: 70px 0 30px;
+  font-family: 'Lato', sans-serif;
+  background: #222;
+  color: #FFF;
+}
+
+a, a:visited {
+  color: #FD7;
+  text-decoration: none;
+}
+
+h1 {
+  color: #FD7;
+}
+
+#navbar-top {
+  background: #E24C6B;
+}
+
+#logo {
+  text-indent: -9999%;
+  background: #E24C6B url('../avatars/avatar.png') 0 0 no-repeat;
+  background-size: cover;
+  color: #FFF;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.users .avatar {
+  width: 80px;
+  height: auto;
+  /*padding: 2px;*/
+  border: 1px solid #000;
+  margin: 10px 20px 10px 0;
+}
+
+.desc {
+  color: #CCC;
+}

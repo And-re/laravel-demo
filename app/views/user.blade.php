@@ -1,14 +1,16 @@
 @extends('layout')
 
 @section('content')
-    <h2>{{ $user->name }}</h2>
+    <img class="avatar img-thumbnail" src="{{asset('avatars')}}/{{ (isset($user->avatar)) ? $user->avatar : 'avatar.png' }}" alt="{{ $user->name }}" />
+
+    <h1>{{ $user->name }}</h1>
     @if (isset($user->position))
 	    <p>
 	        {{ $user->position }}
 	    </p>
     @endif
     @if (isset($user->desc))
-	    <p>
+	    <p class="desc">
 	        {{ $user->desc }}
 	    </p>
     @endif
