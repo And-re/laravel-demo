@@ -4,7 +4,7 @@ class UserController extends BaseController {
 
 	public function getIndex()
 	{
-		$users = User::getMapper()->find()->get();
+		$users = User::getMapper()->find()->sort( [ 'active' => 1 ] )->get();
 
 		return View::make('users')->with('users', $users);
 	}

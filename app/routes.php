@@ -27,5 +27,5 @@ Route::get('users', function()
 
 Route::get('/', 'HomeController@showWelcome');
 
-Route::get('users', 'UserController@getIndex');
+Route::get('users', array('as' => 'users', 'uses' => 'UserController@getIndex'));
 Route::get('users/{id}', array('as' => 'profile', 'uses' => 'UserController@getUser'));
