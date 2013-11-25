@@ -20,7 +20,7 @@
     <p>No users</p>
   @endif
 
-  @if (count($users) < 8)
+  @if (!isset(array_get($users, 'and_re')->_id))
     <a class="btn btn-danger btn-lg" href="{{ URL::route('activate') }}">Add New Team Member</a>
   @endif
 @stop

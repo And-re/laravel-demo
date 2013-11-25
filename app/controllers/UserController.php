@@ -22,7 +22,7 @@ class UserController extends BaseController {
 		$user->active = true;
 		$user->save();
 
-		return Redirect::to( 'users' )->with('message', 'New Team Member added!');;
+		return Redirect::to( '/' )->with('message', 'New Team Member added!');;
 	}
 
 }
